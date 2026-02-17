@@ -1,10 +1,142 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réservation de salle</title>
 </head>
+
 <body>
-    
+
+ <!-- Reservation --> 
+  <h1>Réservation de salle</h1>
+  <p>Ce formulaire est une simple demande de réservation et n'est pas une confirmation, nous nous efforçons de vous répondre dans les plus brefs délais.</p>
+
+  <form action="" method="post">
+
+    <!-- Coordonnées -->
+    <h2>Vos coordonnées</h2>
+
+    <label for="prenom">Prénom *</label>
+    <input type="text" id="prenom" name="prenom" required />
+
+    <label for="nom">Nom *</label>
+    <input type="text" id="nom" name="nom" required />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="telephone">Téléphone *</label>
+    <input type="tel" id="telephone" name="telephone" required />
+
+    <!-- Choix de la salle -->
+    <h2>La salle</h2>
+
+    <label for="salle">Salle souhaitée *</label>
+    <select id="salle" name="salle" required>
+      <option value="">-- Choisissez une salle --</option>
+      <option value="1">Stade de France — Paris (90 000 pers.)</option>
+      <option value="2">Paris La Défense Arena — Nanterre (40 000 pers.)</option>
+      <option value="3">Zénith de Nancy — Maxéville (25 000 pers.)</option>
+      <option value="4">Arena Pierre-Mauroy — Villeneuve-d'Ascq (25 000 pers.)</option>
+      <option value="5">Accor Arena — Paris (20 300 pers.)</option>
+      <option value="6">Halle Tony Garnier — Lyon (17 000 pers.)</option>
+      <option value="7">LDLC Arena — Décines-Charpieu (16 000 pers.)</option>
+      <option value="8">Sud de France Arena — Pérols (14 800 pers.)</option>
+      <option value="9">Arena stade couvert de Liévin (14 000 pers.)</option>
+      <option value="10">Grand Hall Parc des Expos de Tours (14 000 pers.)</option>
+      <option value="11">Arènes de Béziers (13 100 pers.)</option>
+      <option value="12">Arènes de Nîmes (13 000 pers.)</option>
+      <option value="13">Arènes d'Arles (12 500 pers.)</option>
+      <option value="14">Galaxie — Amnéville (12 200 pers.)</option>
+      <option value="15">Zénith Strasbourg Europe — Eckbolsheim (12 079 pers.)</option>
+    </select>
+
+    <!-- Événement -->
+    <h2>Votre événement</h2>
+
+    <label for="type-evenement">Type d'événement *</label>
+    <select id="type-evenement" name="type-evenement" required>
+      <option value="">-- Choisissez --</option>
+      <option value="concert">Concert</option>
+      <option value="spectacle">Spectacle</option>
+      <option value="sport">Événement sportif</option>
+      <option value="conference">Conférence</option>
+      <option value="salon">Salon / Exposition</option>
+      <option value="autre">Autre</option>
+    </select>
+
+    <label for="date">Date souhaitée *</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="heure-debut">Heure de début *</label>
+    <input type="time" id="heure-debut" name="heure-debut" required />
+
+    <label for="heure-fin">Heure de fin</label>
+    <input type="time" id="heure-fin" name="heure-fin" />
+
+    <label for="nb-personnes">Nombre de personnes *</label>
+    <input type="number" id="nb-personnes" name="nb-personnes" min="1" required />
+
+    <!-- Informations complémentaires -->
+    <h2>Informations complémentaires</h2>
+
+    <label for="message">Message / Besoins particuliers</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <button type="submit">Envoyer ma demande</button>
+
+  </form>
+
+  <!-- Footer -->
+
+  <div class="liner-footer"></div>
+
+  <footer id="contact">
+
+    <div class="footer-container">
+
+      <!-- Colonne 1 : Logo et description -->
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="RentalEvents.png" alt="Logo Event" />
+        </div>
+        <p class="footer-desc">Votre partenaire de confiance pour des événements inoubliables.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Colonne 2 : Contact -->
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Rue de l'event, Bordeaux</span>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>+33 1 23 45 67 89</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>contact@event.com</span>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- /.footer-container -->
+
+    <div class="footer-bottom">
+      <p>&copy; 2026. Tous droits réservés.</p>
+    </div>
+
+  </footer>
+
 </body>
 </html>
