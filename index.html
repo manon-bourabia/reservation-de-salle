@@ -5,14 +5,20 @@
     <title>L'avant-Scène</title>
     <link rel="stylesheet" href="homePage.css" />
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <!-----START HEADER----->
     <header>
       <nav class="headerNav">
         <div>
-            <img class="logo" src="images/logo.png" alt="logo">  
+          <img class="logo" src="images/logo.png" alt="logo" />
         </div>
         <div>
           <ul class="navLinks">
@@ -28,8 +34,124 @@
           </div>
         </div>
       </nav>
-      <!----END HEADER---->
     </header>
+    <!----END HEADER---->
+    <div
+      class="carousel"
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            class="acArena"
+            src="images/rooms/AccorArena.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>L'Accor Arena : Le Cœur Battant de l'Événementiel Parisien.</h5>
+            <p>
+              Temple de la scène française et internationale, l’Accor Arena
+              s’impose comme une plateforme stratégique pour les productions les
+              plus exigeantes. Grâce à une modularité poussée et une capacité
+              allant jusqu’à 20 300 spectateurs, la salle s'adapte à toutes les
+              configurations : de la scène frontale classique à la configuration
+              360°, jusqu’au théâtre intimiste. Dotée d'une logistique de pointe
+              et de services VIP exclusifs, elle offre aux artistes et à leurs
+              agents un environnement technique optimal pour transformer chaque
+              spectacle en une expérience immersive inoubliable. Réserver
+              l'Accor Arena, c'est choisir l'excellence au cœur de Paris.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="images/rooms/ldlcArena.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>LDLC Arena : La Nouvelle Référence Technologique à Lyon.</h5>
+            <p>
+              Inaugurée comme l'une des enceintes les plus modernes d'Europe, la
+              LDLC Arena est l'outil ultime pour les tournées internationales de
+              passage en région Rhône-Alpes. Avec une capacité de 16 000 places,
+              elle a été conçue avec une acoustique révolutionnaire et des
+              infrastructures numériques de pointe. Pour les organisateurs, elle
+              offre une flexibilité totale et des temps de montage optimisés.
+              Située au cœur de l'OL Vallée, elle garantit aux artistes une
+              visibilité maximale et un confort premium, faisant d'elle le
+              nouveau passage obligé des plus grands shows mondiaux.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/rooms/Paris La Defense Arena.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              Paris La Défense Arena : L'Infrastucture de tous les Records.
+            </h5>
+            <p>
+              Plus qu'une salle, une prouesse architecturale. Avec une capacité
+              hors norme pouvant atteindre 40 000 spectateurs, la Paris La
+              Défense Arena redéfinit les limites de la production scénique en
+              Europe. Elle offre aux artistes l'envergure d'un stade couplée à
+              l'acoustique et au confort d'une salle de concert. Son écran géant
+              de 1 400 m² — l'un des plus grands au monde — et sa structure
+              totalement fermée garantissent un contrôle total de l'image et du
+              son, indépendamment des conditions climatiques. C'est l'écrin
+              ultime pour les shows monumentaux et les expériences immersives à
+              360°.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </body>
   <script src="homePage.js"></script>
 </html>
