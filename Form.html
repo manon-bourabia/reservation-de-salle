@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Réservation de salle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Form.css">
 </head>
 
 <body>
@@ -66,6 +68,7 @@
       <option value="salon">Salon / Exposition</option>
       <option value="autre">Autre</option>
     </select>
+    <img id="apercu-salle" alt="Aperçu de la salle" />
 
     <label for="date">Date souhaitée *</label>
     <input type="date" id="date" name="date" required />
@@ -100,7 +103,7 @@
       <!-- Colonne 1 : Logo et description -->
       <div class="footer-column">
         <div class="footer-logo">
-          <img src="RentalEvents.png" alt="Logo Event" />
+          <img src="images/rooms/RentalEvents.png" alt="Logo Event" />
         </div>
         <p class="footer-desc">Votre partenaire de confiance pour des événements inoubliables.</p>
         <div class="footer-socials">
@@ -139,4 +142,5 @@
   </footer>
 
 </body>
+<script src="Form.js"></script>
 </html>
