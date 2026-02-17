@@ -6,7 +6,7 @@
       "city": "Paris",
       "description": "Stade situé à Paris",
       "capacity": 90000,
-      "photo_path": "/images/rooms/stade_de_france.jpg"
+      "photo_path": "../images/rooms/StadeDeFrance.jpg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "city": "Nanterre",
       "description": "Arena située à Nanterre (Paris)",
       "capacity": 40000,
-      "photo_path": "/images/rooms/paris_la_defense_arena.jpg"
+      "photo_path": "../images/rooms/Paris La Defense Arena.jpg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "city": "Maxéville",
       "description": "Amphithéâtre extérieur situé à Maxéville (Nancy)",
       "capacity": 25000,
-      "photo_path": "/images/rooms/zenith_nancy.jpg"
+      "photo_path": "../images/rooms/zenitNancy.webp"
     },
     {
       "id": 4,

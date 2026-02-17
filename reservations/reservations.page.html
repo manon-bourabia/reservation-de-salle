@@ -6,23 +6,25 @@
     <link rel="stylesheet" href="reservations.css">
 </head>
 <body>
-    <section>
-        <template id="templateReservation">
+    <section id="container">
+    <template id="templateReservation">
+        <div class="card">
+            <div class="photo"></div>
 
-        <div id="photo"></div>
-        <div id="title">
-            <h2 class="roomTitle"></h2>
+            <div class="title">
+                <h2 class="roomTitle"></h2>
+            </div>
+
+            <div class="description">
+                <p class="roomdescription"></p>
+            </div>
+
+            <div class="reservation">
+                <button class="reserveBtn">Réserver</button>
+            </div>
         </div>
-        <div id="description">
-           <p id="roomdescription"></p>
-        </div>
-        <div id="reservation"> <button>Reserver</button></div>
-
-        </template>
-
-
-        
-    </section>
+    </template>
+</section>
    
     
 </body>
