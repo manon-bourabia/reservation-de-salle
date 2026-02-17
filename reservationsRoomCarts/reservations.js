@@ -1,5 +1,17 @@
+
+
+
 const container = document.getElementById("container")
 const template = document.getElementById("templateReservation")
+
+
+
+
+
+
+
+
+
 
 function showRooms(rooms) {
 
@@ -30,7 +42,7 @@ function showRooms(rooms) {
       
         clone.querySelector(".reserveBtn")
             .addEventListener("click", () => {
-                alert(`Réservation pour ${room.room_name} à ${room.city}`)
+                window.location.href = "http://127.0.0.1:5500/reservation-de-salle/Form.html"
             })
 
       
@@ -38,7 +50,7 @@ function showRooms(rooms) {
     })
 }
 
-window.addEventListener("DOMContentLoaded", () => {
+ window.addEventListener("DOMContentLoaded", () => {
 
     fetch("data.json")
         .then(response => response.json())
@@ -48,3 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Erreur :", error))
 
 })
+ 
+
+
+
