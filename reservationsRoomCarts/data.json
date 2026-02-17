@@ -78,7 +78,7 @@
       "city": "Tours",
       "description": "Hall d'exposition situé à Tours",
       "capacity": 14000,
-      "photo_path": "../images/rooms/grand_hall_tours.jpg"
+      "photo_path": "../images/rooms/grand-hall.jpg"
     },
     {
       "id": 11,
@@ -86,7 +86,7 @@
       "city": "Béziers",
       "description": "Arènes situées à Béziers",
       "capacity": 13100,
-      "photo_path": "/images/rooms/arenes_beziers.jpg"
+      "photo_path": "../images/rooms/Arenes-de-Beziers.jpg"
     },
     {
       "id": 12,
@@ -94,7 +94,7 @@
       "city": "Nîmes",
       "description": "Arènes situées à Nîmes",
       "capacity": 13000,
-      "photo_path": "/images/rooms/arenes_nimes.jpg"
+      "photo_path": "../images/rooms/arenes-de-nimes.jpg"
     },
     {
       "id": 13,
@@ -102,7 +102,7 @@
       "city": "Arles",
       "description": "Arènes situées à Arles",
       "capacity": 12500,
-      "photo_path": "/images/rooms/arenes_arles.jpg"
+      "photo_path": "../images/rooms/ArenesDArles.jpg"
     },
     {
       "id": 14,
@@ -110,7 +110,7 @@
       "city": "Amnéville",
       "description": "Salle de spectacle située à Amnéville",
       "capacity": 12200,
-      "photo_path": "/images/rooms/galaxie_amneville.jpg"
+      "photo_path": "../images/rooms/galaxie-amneville.jpg"
     },
     {
       "id": 15,
@@ -118,7 +118,7 @@
       "city": "Eckbolsheim",
       "description": "Salle située à Eckbolsheim (Strasbourg)",
       "capacity": 12079,
-      "photo_path": "/images/rooms/zenith_strasbourg.jpg"
+      "photo_path": "../images/rooms/zenith-Strasbourg.jpg"
     },
     
     {
@@ -127,7 +127,7 @@
       "city": "Brest",
       "description": "Salle située à  Brest (Guilers)",
       "capacity": 12000,
-      "photo_path": "/images/rooms/zenith_strasbourg.jpg"
+      "photo_path": "../images/rooms/hallePenfeldParc.jpg"
     }
 
     
