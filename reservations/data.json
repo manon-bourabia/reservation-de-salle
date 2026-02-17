@@ -30,7 +30,7 @@
       "city": "Villeneuve-d'Ascq",
       "description": "Arena située à Villeneuve-d'Ascq (Lille)",
       "capacity": 25000,
-      "photo_path": "/images/rooms/arena_pierre_mauroy.jpg"
+      "photo_path": "../images/rooms/stade-pierre-mauroy.jpg"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "city": "Paris",
       "description": "Salle située à Paris",
       "capacity": 20300,
-      "photo_path": "/images/rooms/accor_arena.jpg"
+      "photo_path": "../images/rooms/AccorArena.jpg"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "city": "Lyon",
       "description": "Salle de spectacle située à Lyon",
       "capacity": 17000,
-      "photo_path": "/images/rooms/halle_tony_garnier.jpg"
+      "photo_path": "../images/rooms/halleTonyGarnier.jpg"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "city": "Décines-Charpieu",
       "description": "Arena située à Décines-Charpieu (Lyon)",
       "capacity": 16000,
-      "photo_path": "/images/rooms/ldlc_arena.jpg"
+      "photo_path": "../images/rooms/ldlcArena.jpg"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "city": "Pérols",
       "description": "Arena située à Pérols (Montpellier)",
       "capacity": 14800,
-      "photo_path": "/images/rooms/sud_de_france_arena.jpg"
+      "photo_path": "../images/rooms/sud-de-france-arena-3.jpg"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "city": "Liévin",
       "description": "Arena située à Liévin",
       "capacity": 14000,
-      "photo_path": "/images/rooms/arena_lievin.jpg"
+      "photo_path": "../images/rooms/arenaStadeCouvertDeLievin.jpg"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "city": "Tours",
       "description": "Hall d'exposition situé à Tours",
       "capacity": 14000,
-      "photo_path": "/images/rooms/grand_hall_tours.jpg"
+      "photo_path": "../images/rooms/grand_hall_tours.jpg"
     },
     {
       "id": 11,
@@ -119,6 +119,17 @@
       "description": "Salle située à Eckbolsheim (Strasbourg)",
       "capacity": 12079,
       "photo_path": "/images/rooms/zenith_strasbourg.jpg"
+    },
+    
+    {
+      "id": 16,
+      "room_name": "Halle Penfeld Parc des Expo",
+      "city": "Brest",
+      "description": "Salle située à  Brest (Guilers)",
+      "capacity": 12000,
+      "photo_path": "/images/rooms/zenith_strasbourg.jpg"
     }
+
+    
   ]
 }
