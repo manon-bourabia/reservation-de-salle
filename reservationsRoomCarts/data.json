@@ -6,7 +6,7 @@
       "city": "Paris",
       "description": "Stade situé à Paris",
       "capacity": 90000,
-      "photo_path": "../images/rooms/StadeDeFrance.jpg"
+      "photo_path": "../rooms/StadeDeFrance.jpg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "city": "Nanterre",
       "description": "Arena située à Nanterre (Paris)",
       "capacity": 40000,
-      "photo_path": "../images/rooms/Paris La Defense Arena.jpg"
+      "photo_path": "../rooms/Paris La Defense Arena.jpg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "city": "Maxéville",
       "description": "Amphithéâtre extérieur situé à Maxéville (Nancy)",
       "capacity": 25000,
-      "photo_path": "../images/rooms/zenitNancy.webp"
+      "photo_path": "../rooms/zenitNancy.webp"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "city": "Villeneuve-d'Ascq",
       "description": "Arena située à Villeneuve-d'Ascq (Lille)",
       "capacity": 25000,
-      "photo_path": "../images/rooms/stade-pierre-mauroy.jpg"
+      "photo_path": "../rooms/stade-pierre-mauroy.jpg"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "city": "Paris",
       "description": "Salle située à Paris",
       "capacity": 20300,
-      "photo_path": "../images/rooms/AccorArena.jpg"
+      "photo_path": "../rooms/AccorArena.jpg"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "city": "Lyon",
       "description": "Salle de spectacle située à Lyon",
       "capacity": 17000,
-      "photo_path": "../images/rooms/halleTonyGarnier.jpg"
+      "photo_path": "../rooms/halleTonyGarnier.jpg"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "city": "Décines-Charpieu",
       "description": "Arena située à Décines-Charpieu (Lyon)",
       "capacity": 16000,
-      "photo_path": "../images/rooms/ldlcArena.jpg"
+      "photo_path": "../rooms/ldlcArena.jpg"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "city": "Pérols",
       "description": "Arena située à Pérols (Montpellier)",
       "capacity": 14800,
-      "photo_path": "../images/rooms/sud-de-france-arena-3.jpg"
+      "photo_path": "../rooms/sud-de-france-arena-3.jpg"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "city": "Liévin",
       "description": "Arena située à Liévin",
       "capacity": 14000,
-      "photo_path": "../images/rooms/arenaStadeCouvertDeLievin.jpg"
+      "photo_path": "../rooms/arenaStadeCouvertDeLievin.jpg"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "city": "Tours",
       "description": "Hall d'exposition situé à Tours",
       "capacity": 14000,
-      "photo_path": "../images/rooms/grand-hall.jpg"
+      "photo_path": "../rooms/grand-hall.jpg"
     },
     {
       "id": 11,
@@ -86,7 +86,7 @@
       "city": "Béziers",
       "description": "Arènes situées à Béziers",
       "capacity": 13100,
-      "photo_path": "../images/rooms/Arenes-de-Beziers.jpg"
+      "photo_path": "../rooms/Arenes-de-Beziers.jpg"
     },
     {
       "id": 12,
@@ -94,7 +94,7 @@
       "city": "Nîmes",
       "description": "Arènes situées à Nîmes",
       "capacity": 13000,
-      "photo_path": "../images/rooms/arenes-de-nimes.jpg"
+      "photo_path": "../rooms/arenes-de-nimes.jpg"
     },
     {
       "id": 13,
@@ -102,7 +102,7 @@
       "city": "Arles",
       "description": "Arènes situées à Arles",
       "capacity": 12500,
-      "photo_path": "../images/rooms/ArenesDArles.jpg"
+      "photo_path": "../rooms/ArenesDArles.jpg"
     },
     {
       "id": 14,
@@ -110,7 +110,7 @@
       "city": "Amnéville",
       "description": "Salle de spectacle située à Amnéville",
       "capacity": 12200,
-      "photo_path": "../images/rooms/galaxie-amneville.jpg"
+      "photo_path": "../rooms/galaxie-amneville.jpg"
     },
     {
       "id": 15,
@@ -118,7 +118,7 @@
       "city": "Eckbolsheim",
       "description": "Salle située à Eckbolsheim (Strasbourg)",
       "capacity": 12079,
-      "photo_path": "../images/rooms/zenith-Strasbourg.jpg"
+      "photo_path": "../rooms/zenith-Strasbourg.jpg"
     },
     
     {
@@ -127,7 +127,7 @@
       "city": "Brest",
       "description": "Salle située à  Brest (Guilers)",
       "capacity": 12000,
-      "photo_path": "../images/rooms/hallePenfeldParc.jpg"
+      "photo_path": "../rooms/hallePenfeldParc.jpg"
     }
 
     
