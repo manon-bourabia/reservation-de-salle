@@ -86,3 +86,27 @@ body {
     background: linear-gradient(135deg,#0d1b2a, #415A77);
     transform: scale(1.03);
 }
+
+
+.split-title {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
