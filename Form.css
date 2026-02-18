@@ -1,0 +1,280 @@
+/* ================================================
+   PALETTE DEEP SEA
+   #0D1B2A → fond général (bleu nuit)
+   #1B263B → fond carte / sections
+   #415A77 → bordures, titres secondaires
+   #778DA9 → texte secondaire, accents
+   #E0E1DD → texte principal (presque blanc)
+================================================ */
+
+/* Variables */
+:root {
+  --c1: #0D1B2A;
+  --c2: #1B263B;
+  --c3: #415A77;
+  --c4: #778DA9;
+  --c5: #E0E1DD;
+}
+
+
+body {
+  background-color: var(--c4);
+  color: var(--c5);
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* TITRE */
+h1{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--c5);
+  text-align: center;
+  margin: 3rem 0 0.5rem 0;
+  letter-spacing: 0.05em;
+}
+
+/* sous-titre sous h1 */
+h1 + p {
+  text-align: center;
+  color: var(--c5);
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.7;
+}
+
+
+/* FORMULAIRE */
+form {
+  background-color: var(--c2);
+  border: 1px solid var(--c3);
+  border-radius: 20px;
+  max-width: 680px;       
+  margin: 0 auto 5rem auto; 
+  padding: 2.5rem 3rem;
+}
+
+
+/* TITRES dans le formulaire */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--c4);
+  border-bottom: 1px solid var(--c3);
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 1.2rem 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h2:first-of-type {
+  margin-top: 0;
+}
+
+
+/* texte au-dessus de chaque champ */
+label {
+  display: block;          
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--c4);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+
+input,
+select,
+textarea {
+  display: block;           
+  width: 100%;
+  background-color: var(--c1);
+  color: var(--c5);
+  border: 1.5px solid var(--c3);
+  border-radius: var(--rayon);
+  padding: 0.75rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  box-sizing: border-box;  
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Quand on clique dans un champ */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--c4);
+  box-shadow: 0 0 0 3px rgba(119, 141, 169, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--c3);
+}
+
+/*  select couleur de fond fixe */
+select option {
+  background-color: var(--c2);
+  color: var(--c5);
+}
+
+
+/* APERÇU DE LA SALLE */
+#apercu-salle {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;       
+  border-radius: var(--rayon);
+  border: 1px solid var(--c3);
+  margin-bottom: 1.2rem;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#apercu-salle.visible {
+  display: block;
+  opacity: 1;
+}
+
+
+/* BOUTON D'ENVOI */
+button[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--c3);
+  color: var(--c5);
+  border: none;
+  border-radius: var(--rayon);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--c4);
+  color: var(--c1);
+}
+
+/* effet quand on clique */
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+
+/* LIGNE avant le footer */
+.liner-footer {
+  height: 1px;
+  background-color: var(--c3);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/*FOOTER*/
+footer {
+  background-color: var(--c5);
+  padding: 3rem 2rem 1.5rem;
+}
+
+.footer-container {
+  display: flex;            
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;          
+}
+
+.footer-column {
+  flex: 1;                  
+  min-width: 200px;
+}
+
+/* Logo */
+.footer-logo img {
+  height: 180px;
+  display: flex;
+  margin-left: 70px;
+}
+
+/* Description sous le logo */
+.footer-desc {
+  color: var(--c4);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin-top: -40px;
+}
+
+/* Icônes réseaux sociaux */
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-socials a {
+  color: var(--c4);
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+  color: var(--c5);
+}
+
+/* Titre Contact dans le footer */
+footer h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--c5);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Liste des infos de contact */
+.footer-contact {
+  list-style: none;         
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--c4);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-contact i {
+  color: var(--c3);
+  width: 16px;
+}
+
+/* Barre tout en bas du footer */
+.footer-bottom {
+  text-align: center;
+  color: var(--c3);
+  font-size: 0.8rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--c3);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
