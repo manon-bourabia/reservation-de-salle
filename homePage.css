@@ -45,7 +45,7 @@ a {
 .heroConcert {
   width: 100%;
   height: 600px;
-  background: #0d1b2a; /* Fond sombre pour faire ressortir les images */
+  background: #0d1b2a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,45 +90,36 @@ input[type=radio] { display: none; }
   object-fit: cover;
 }
 
-/* --- LOGIQUE DE POSITIONNEMENT (Z-INDEX) --- */
-
-/* Quand l'item 1 est coché */
 #item-1:checked ~ .cards #salle-1 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }
 #item-1:checked ~ .cards #salle-2 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-1:checked ~ .cards #salle-3 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-1:checked ~ .cards #salle-4 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-1:checked ~ .cards #salle-5 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
 
-/* Quand l'item 2 est coché */
 #item-2:checked ~ .cards #salle-1 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-2:checked ~ .cards #salle-2 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }
 #item-2:checked ~ .cards #salle-3 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-2:checked ~ .cards #salle-4 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-2:checked ~ .cards #salle-5 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
 
-/* Quand l'item 3 est coché */
 #item-3:checked ~ .cards #salle-1 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-3:checked ~ .cards #salle-2 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-3:checked ~ .cards #salle-3 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }
 #item-3:checked ~ .cards #salle-4 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-3:checked ~ .cards #salle-5 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
 
-/* Quand l'item 4 (LDLC) est coché */
-#item-4:checked ~ .cards #salle-2 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; } /* Loin à gauche */
-#item-4:checked ~ .cards #salle-3 { transform: translateX(-20%) scale(0.9); z-index: 8; opacity: 0.8; } /* Juste à gauche */
-#item-4:checked ~ .cards #salle-4 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }      /* CENTRE */
-#item-4:checked ~ .cards #salle-5 { transform: translateX(20%) scale(0.9); z-index: 8; opacity: 0.8; }  /* Juste à droite (GALAXIE) */
-#item-4:checked ~ .cards #salle-1 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }  /* Loin à droite (ZENITH) */
+#item-4:checked ~ .cards #salle-2 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-4:checked ~ .cards #salle-3 { transform: translateX(-20%) scale(0.9); z-index: 8; opacity: 0.8; }
+#item-4:checked ~ .cards #salle-4 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; } 
+#item-4:checked ~ .cards #salle-5 { transform: translateX(20%) scale(0.9); z-index: 8; opacity: 0.8; }
+#item-4:checked ~ .cards #salle-1 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
 
-/* Quand l'item 5 (GALAXIE) est coché */
 #item-5:checked ~ .cards #salle-3 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
 #item-5:checked ~ .cards #salle-4 { transform: translateX(-20%) scale(0.9); z-index: 8; opacity: 0.8; }
-#item-5:checked ~ .cards #salle-5 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }      /* CENTRE */
-#item-5:checked ~ .cards #salle-1 { transform: translateX(20%) scale(0.9); z-index: 8; opacity: 0.8; }  /* ZENITH revient à droite */
+#item-5:checked ~ .cards #salle-5 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }
+#item-5:checked ~ .cards #salle-1 { transform: translateX(20%) scale(0.9); z-index: 8; opacity: 0.8; }
 #item-5:checked ~ .cards #salle-2 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
 
-
-/* --- STYLE DES INFOS --- */
 .infos {
   position: absolute;
   bottom: 0;
