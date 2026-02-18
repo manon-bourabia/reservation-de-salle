@@ -163,10 +163,10 @@ input[type=radio] { display: none; }
     height: 30vh;
     top: 3vh;
     background-color: #778da9;
+    flex-direction: column;
     width: 20%;
-    transform: translateX(130%);
-    transition: transform 0.5s ease;
-    z-index: 11 !important;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
   .navActive {
     transform: translateX(0%);

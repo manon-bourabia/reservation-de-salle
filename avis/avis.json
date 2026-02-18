@@ -1,0 +1,112 @@
+{
+  "avis": [
+    {
+      "id": 1,
+      "nom": "Antoine Morel",
+      "poste": "Directeur de tournée internationale",
+      "photo": "images/antoine.jpg",
+      "note": 5,
+      "commentaire": "Organisation irréprochable. La réservation de l’Accor Arena s’est faite avec une fluidité exceptionnelle. Équipe réactive et parfaitement connectée aux acteurs du secteur.",
+      "date": "2026-01-12"
+    },
+    {
+      "id": 2,
+      "nom": "Isabella Rossi",
+      "poste": "Executive Producer",
+      "photo": "images/isabella.jpg",
+      "note": 5,
+      "commentaire": "Nous avons sécurisé plusieurs dates dans des arenas majeures en Europe grâce à leur réseau. Professionnalisme, discrétion et efficacité.",
+      "date": "2026-01-25"
+    },
+    {
+      "id": 3,
+      "nom": "Karim Benali",
+      "poste": "Agent d'artistes internationaux",
+      "photo": "images/karim.jpg",
+      "note": 4,
+      "commentaire": "Excellente coordination pour la réservation des Arènes de Nîmes. Gestion logistique très bien anticipée.",
+      "date": "2026-02-02"
+    },
+    {
+      "id": 4,
+      "nom": "Charlotte Dubois",
+      "poste": "Responsable événements premium",
+      "photo": "images/charlotte.jpg",
+      "note": 5,
+      "commentaire": "Un service sur-mesure. Leur expertise des grandes salles françaises est un véritable atout stratégique.",
+      "date": "2026-01-18"
+    },
+    {
+      "id": 5,
+      "nom": "James Walker",
+      "poste": "Tour Manager",
+      "photo": "images/james.jpg",
+      "note": 5,
+      "commentaire": "They handled arena negotiations flawlessly. Clear communication and outstanding venue access.",
+      "date": "2026-02-10"
+    },
+    {
+      "id": 6,
+      "nom": "Léa Garnier",
+      "poste": "Productrice exécutive",
+      "photo": "images/lea.jpg",
+      "note": 4,
+      "commentaire": "Très bonne maîtrise du calendrier et des contraintes techniques des grandes salles.",
+      "date": "2026-01-30"
+    },
+    {
+      "id": 7,
+      "nom": "David Cohen",
+      "poste": "International Booking Director",
+      "photo": "images/david.jpg",
+      "note": 5,
+      "commentaire": "A strategic partner for high-profile arena shows. Highly recommended for large-scale productions.",
+      "date": "2026-02-14"
+    },
+    {
+      "id": 8,
+      "nom": "Sofia Martinez",
+      "poste": "Concert Promoter",
+      "photo": "images/sofia.jpg",
+      "note": 5,
+      "commentaire": "Leur réseau nous a permis d’obtenir des créneaux très demandés dans des arenas prestigieuses.",
+      "date": "2026-01-05"
+    },
+    {
+      "id": 9,
+      "nom": "Hugo Lefèvre",
+      "poste": "Directeur artistique",
+      "photo": "images/hugo.jpg",
+      "note": 4,
+      "commentaire": "Approche professionnelle et accompagnement premium du début à la fin.",
+      "date": "2026-01-20"
+    },
+    {
+      "id": 10,
+      "nom": "Olivia Schneider",
+      "poste": "Senior Event Consultant",
+      "photo": "images/olivia.jpg",
+      "note": 5,
+      "commentaire": "Their knowledge of major European arenas makes them a key partner for international artists.",
+      "date": "2026-02-15"
+    },
+    {
+      "id": 11,
+      "nom": "Matteo Ricci",
+      "poste": "Production Manager",
+      "photo": "images/matteo.jpg",
+      "note": 5,
+      "commentaire": "Coordination parfaite avec les équipes techniques des grandes salles. Un gain de temps considérable.",
+      "date": "2026-02-08"
+    },
+    {
+      "id": 12,
+      "nom": "Claire Moreau",
+      "poste": "Directrice des opérations",
+      "photo": "images/claire.jpg",
+      "note": 5,
+      "commentaire": "Service haut de gamme adapté aux productions d’envergure internationale. Nous continuerons à collaborer sur nos futures tournées.",
+      "date": "2026-02-16"
+    }
+  ]
+}
