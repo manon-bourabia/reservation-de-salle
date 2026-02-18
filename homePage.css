@@ -1,26 +1,35 @@
 /* START HEADER */
-.headerNav{
-    border-bottom: 1px solid #0d1b2a;
+.headerNav a {
+  color: #0d1b2a;
+}
+.headerNav a:visited{
+  color: #1b263b;
+}
+.headerNav a:hover{
+  color: #415a77;
 }
 .logo {
-  width: 50px;
+  width: 150px;
   transition: all 0.3s ease;
 }
 .navLinks {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  gap: 40px;
+  margin-right: 20px;
+  gap: 35px;
   list-style: none;
   cursor: pointer;
 }
 .headerNav {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
 }
 .burger {
   cursor: pointer;
   display: none;
+  margin-top: 50%;
 }
 .burger div {
   width: 25px;
@@ -29,30 +38,152 @@
   margin: 5px;
   transition: all 0.3s ease;
 }
-.carousel{
-    width: 90%;
-    text-align: center;
+a {
+  text-decoration: none;
+}
+/* Caroussel */
+.heroConcert {
+  width: 100%;
+  height: 600px;
+  background: #0d1b2a; /* Fond sombre pour faire ressortir les images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCarousel {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  position: relative;
+  margin: 0 auto;
+}
+
+input[type=radio] { display: none; }
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; 
+  right: 0; 
+  margin: auto;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.6s ease, z-index 0.6s;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px #e0e1dd;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- LOGIQUE DE POSITIONNEMENT (Z-INDEX) --- */
+
+/* Quand l'item 1 est coché */
+#item-1:checked ~ .cards #salle-1 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }
+#item-1:checked ~ .cards #salle-2 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-1:checked ~ .cards #salle-3 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-1:checked ~ .cards #salle-4 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-1:checked ~ .cards #salle-5 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
+
+/* Quand l'item 2 est coché */
+#item-2:checked ~ .cards #salle-1 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-2:checked ~ .cards #salle-2 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }
+#item-2:checked ~ .cards #salle-3 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-2:checked ~ .cards #salle-4 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-2:checked ~ .cards #salle-5 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
+
+/* Quand l'item 3 est coché */
+#item-3:checked ~ .cards #salle-1 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-3:checked ~ .cards #salle-2 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-3:checked ~ .cards #salle-3 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }
+#item-3:checked ~ .cards #salle-4 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-3:checked ~ .cards #salle-5 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
+
+/* Quand l'item 4 (LDLC) est coché */
+#item-4:checked ~ .cards #salle-2 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; } /* Loin à gauche */
+#item-4:checked ~ .cards #salle-3 { transform: translateX(-20%) scale(0.9); z-index: 8; opacity: 0.8; } /* Juste à gauche */
+#item-4:checked ~ .cards #salle-4 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }      /* CENTRE */
+#item-4:checked ~ .cards #salle-5 { transform: translateX(20%) scale(0.9); z-index: 8; opacity: 0.8; }  /* Juste à droite (GALAXIE) */
+#item-4:checked ~ .cards #salle-1 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }  /* Loin à droite (ZENITH) */
+
+/* Quand l'item 5 (GALAXIE) est coché */
+#item-5:checked ~ .cards #salle-3 { transform: translateX(-40%) scale(0.8); z-index: 5; opacity: 0.6; }
+#item-5:checked ~ .cards #salle-4 { transform: translateX(-20%) scale(0.9); z-index: 8; opacity: 0.8; }
+#item-5:checked ~ .cards #salle-5 { transform: translateX(0) scale(1); z-index: 10; opacity: 1; }      /* CENTRE */
+#item-5:checked ~ .cards #salle-1 { transform: translateX(20%) scale(0.9); z-index: 8; opacity: 0.8; }  /* ZENITH revient à droite */
+#item-5:checked ~ .cards #salle-2 { transform: translateX(40%) scale(0.8); z-index: 5; opacity: 0.6; }
+
+
+/* --- STYLE DES INFOS --- */
+.infos {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  color: white;
+  font-family: sans-serif;
+}
+
+.btnReserv {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
+/* HEADER */
+.headerNav{
+  display: flex;
+  justify-content: space-between;
+}
   .navLinks {
-    position: absolute;
+    display:flex;
+    flex-direction: column;
+    position: fixed;
     right: 0px;
     height: 30vh;
     top: 3vh;
     background-color: #778da9;
-    flex-direction: column;
     width: 20%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transform: translateX(130%);
+    transition: transform 0.5s ease;
+    z-index: 11 !important;
   }
   .navActive {
     transform: translateX(0%);
   }
-  .burger{
+  .burger {
     display: block;
     align-items: center;
   }
-  .logo{
-    width: 70px;
+  .logo {
+    width: 150px;
+  }
+/* CAROUSSEL */
+  .heroConcert{
+    height: auto;
+  }
+  .card{
+    width: 60%;
+    max-height: 60%;
   }
 }
