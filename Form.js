@@ -1,13 +1,3 @@
-// ================================================
-// CE FICHIER FAIT UNE SEULE CHOSE :
-// Quand l'utilisateur choisit une salle,
-// on affiche la photo correspondante.
-// ================================================
-
-
-// ── Étape 1 : on associe chaque salle à son image ──
-// C'est un objet : à gauche la valeur du <select>,
-// à droite le chemin vers l'image dans ton projet.
 
 var images = {
   "1":  "images/rooms/StadeDeFrance.jpg",
@@ -28,17 +18,12 @@ var images = {
 };
 
 
-// ── Étape 2 : on récupère les éléments HTML dont on a besoin ──
-
 // Le <select> de choix de salle
 var selectSalle = document.getElementById("salle");
 
-// L'image d'aperçu (on va la créer juste en dessous)
+// L'image d'aperçu 
 var apercu = document.getElementById("apercu-salle");
 
-
-// ── Étape 3 : on écoute les changements sur le <select> ──
-// "change" = quand l'utilisateur choisit une option différente
 
 selectSalle.addEventListener("change", function() {
 
