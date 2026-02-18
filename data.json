@@ -1,0 +1,22 @@
+[
+  {
+    "titre": "Accueil",
+    "url": "/index.html",
+    "description": "Concerts et événements"
+  },
+  {
+    "titre": "Avis",
+    "url": "/avis/avis.html",
+    "description": "Commentaires des clients"
+  },
+  {
+    "titre": "Réservation", 
+    "url": "/Form.html",
+    "description": "Accéder au formulaire de réservation"
+  },
+  {
+    "titre": "Détails Salle",
+    "url": "/reservationsRoomCarts/reservations.page.html",
+    "description": "Voir les détails de la salle"
+  }
+]
