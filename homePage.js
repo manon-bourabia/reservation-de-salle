@@ -17,6 +17,35 @@ const navSlide = () => {
   });
 };
 navSlide();
+// NavBar
+const searchForm = document.querySelector('.search');
+const searchInput = document.querySelector('.searchBar');
+
+searchForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const query = searchInput.value.toLowerCase().trim();
+
+    try {
+        const response = await fetch('/data.json');
+        const data = await response.json();
+
+        // On cherche si le mot tapé est dans le titre OU la description
+        const pageTrouvee = data.find(page => 
+            page.titre.toLowerCase().includes(query) || 
+            page.description.toLowerCase().includes(query)
+        );
+
+        if (pageTrouvee) {
+            // Redirection automatique vers l'URL définie dans le JSON
+            window.location.href = pageTrouvee.url;
+        } else {
+            alert("Aucun résultat pour cette recherche.");
+        }
+    } catch (err) {
+        console.error("Erreur : Vérifiez que data.json est à la racine.");
+    }
+});
+
 // CAROUSSEL
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card");
