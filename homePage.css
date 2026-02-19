@@ -1,24 +1,27 @@
-html, body{
+html,
+body {
   overflow-x: hidden;
   margin: 0;
 }
+body {
+  background-color: #e0e1dd;
+}
 /* START HEADER */
 .headerNav {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 13;
-  background-color: #e0e1dd;
 }
 .headerNav a {
-  color: #415A77;
+  color: #415a77;
 }
 .headerNav a:visited {
-  color: #415A77;
+  color: #415a77;
 }
 .headerNav a:hover {
-  color: #778DA9;
+  color: #778da9;
 }
 .headerNav ul {
   display: flex;
@@ -65,7 +68,7 @@ a {
 }
 .searchBtn {
   border-radius: 15px;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
 }
 /* Caroussel */
@@ -272,31 +275,94 @@ input[type="radio"] {
   font-size: 0.9em;
   margin-top: 10px;
 }
-.partner{
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-bottom: solid 1px #0d1b2a;
+}
+.aboutUs p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutUs h2 {
+  font-family: "Montserrat Medium";
+  color: #0d1b2a;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+.aboutUs span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+.aboutUs span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.aboutUs span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.aboutUs span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.aboutUs span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.aboutUs span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.partner {
+  font-family: "Montserrat Medium";
   text-align: center;
   width: 100%;
-  background-color: #E0E1DD;
   border-bottom: solid 1px #0d1b2a;
-
+  margin: 30px 0px 50px;
 }
-.imgPartner{
+.partner h2 {
+  color: #0d1b2a;
+}
+.imgPartner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
-.imgPartner img{
+.imgPartner img {
   width: auto;
   height: auto;
   max-width: 150px;
   max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 /* TITRE */
-h1{
-  font-family: 'Cormorant Garamond', serif;
+h1 {
+  font-family: "Cormorant Garamond", serif;
   font-size: 2.8rem;
   font-weight: 700;
-  color: #E0E1DD;
+  color: #e0e1dd;
   text-align: center;
   margin: 3rem 0 0.5rem 0;
   letter-spacing: 0.05em;
@@ -305,7 +371,7 @@ h1{
 /* sous-titre sous h1 */
 h1 + p {
   text-align: center;
-  color: #E0E1DD;
+  color: #e0e1dd;
   font-size: 0.95rem;
   max-width: 600px;
   margin: 0 auto 3rem auto;
@@ -314,20 +380,20 @@ h1 + p {
 
 /*FOOTER*/
 footer {
-  background-color: #E0E1DD;
+  background-color: #e0e1dd;
   padding: 3rem 2rem 1.5rem;
 }
 
 .footer-container {
-  display: flex;            
+  display: flex;
   gap: 3rem;
   max-width: 900px;
   margin: 0 auto;
-  flex-wrap: wrap;          
+  flex-wrap: wrap;
 }
 
 .footer-column {
-  flex: 1;                  
+  flex: 1;
   min-width: 200px;
 }
 
@@ -340,7 +406,7 @@ footer {
 
 /* Description sous le logo */
 .footer-desc {
-  color: #778DA9;
+  color: #778da9;
   font-size: 0.88rem;
   line-height: 1.7;
   margin-top: -40px;
@@ -354,20 +420,20 @@ footer {
 }
 
 .footer-socials a {
-  color: #778DA9;
+  color: #778da9;
   font-size: 1.2rem;
   transition: color 0.2s;
 }
 
 .footer-socials a:hover {
-  color: #E0E1DD;
+  color: #e0e1dd;
 }
 
 /* Titre Contact dans le footer */
 footer h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.1rem;
-  color: #E0E1DD;
+  color: #e0e1dd;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -375,7 +441,7 @@ footer h3 {
 
 /* Liste des infos de contact */
 .footer-contact {
-  list-style: none;         
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -384,24 +450,24 @@ footer h3 {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  color: #778DA9;
+  color: #778da9;
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
 }
 
 .footer-contact i {
-  color: #415A77;
+  color: #415a77;
   width: 16px;
 }
 
 /* Barre tout en bas du footer */
 .footer-bottom {
   text-align: center;
-  color: #415A77;
+  color: #415a77;
   font-size: 0.8rem;
   margin-top: 2.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #415A77;
+  border-top: 1px solid #415a77;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -420,7 +486,7 @@ footer h3 {
     position: absolute;
     right: 0;
     top: 100%;
-    background-color: #E0E1DD;
+    background-color: #e0e1dd;
     width: 30%;
     transform: translateX(100%);
     transition: transform 0.5s ease;
@@ -442,5 +508,9 @@ footer h3 {
   .card {
     width: 60%;
     max-height: 60%;
+  }
+  /* Partner */
+  .imgPartner{
+    margin-top: 20px ;
   }
 }
