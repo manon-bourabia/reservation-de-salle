@@ -1,12 +1,20 @@
-html {
+/* Variables */
+:root {
+  --c1: #0D1B2A;
+  --c2: #1B263B;
+  --c3: #415A77;
+  --c4: #778DA9;
+  --c5: #E0E1DD;
+}
+
+html{
   scroll-behavior: smooth;
 }
-html,
-body {
+
+html, body {
   overflow-x: hidden;
   margin: 0;
-}
-body {
+  font-family: 'DM Sans', sans-serif;
   background-color: #e0e1dd;
 }
 /* START HEADER */
@@ -63,6 +71,7 @@ a {
   display: flex;
   align-items: center;
   margin-left: auto;
+  margin-bottom: unset;
 }
 .searchBar {
   border-radius: 15px;
@@ -75,6 +84,21 @@ a {
   background-color: transparent;
   border: none;
 }
+
+/* Quand on clique dans un champ */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--c4);
+  box-shadow: 0 0 0 3px rgba(119, 141, 169, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--c3);
+}
+
 .fade {
   opacity: 0;
   transform: translateY(40px);
@@ -311,17 +335,20 @@ input[type="radio"] {
   justify-content: center;
   align-content: center;
   text-align: center;
-  border-bottom: solid 0.2px #778da9;
-  margin-top: 50px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  border-bottom: solid 1px #0d1b2a;
+  background-color: var(--c3);
 }
 .aboutUs p {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  color: var(--c5);
+  font-size: 0.95rem;
+  margin: 0 auto 3rem auto;
+  line-height: 1.7;
 }
+
 .aboutUs h2 {
   font-family: "Montserrat Medium";
   color: #0d1b2a;
@@ -366,13 +393,16 @@ input[type="radio"] {
 .partner {
   font-family: "Montserrat Medium";
   text-align: center;
-  width: 80%;
-  border-bottom: solid 0.2px #415a77;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  border-bottom: solid 1px #0d1b2a;
+  margin: 30px 0px 50px;
+  background-color: var(--c4);
+  margin-top: 0px;
 }
 .partner h2 {
   color: #0d1b2a;
+  padding-top: 20px;
+  margin-top: 0px;
 }
 .imgPartner {
   display: flex;
@@ -401,6 +431,17 @@ input[type="radio"] {
   bottom: 30px;
   right: 30px;
 
+/* sous-titre sous h1 */
+h1 + p {
+  text-align: center;
+  color: var(--c5);
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.7;
+}
+
+.back-to-top {
   background-color: #778da9;
   color: #0d1b2a;
   width: 30px;
@@ -470,8 +511,9 @@ footer {
 /* Icônes réseaux sociaux */
 .footer-socials {
   display: flex;
-  gap: 1rem;
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer-socials a {
