@@ -18,32 +18,48 @@ const navSlide = () => {
 };
 navSlide();
 // NavBar
-const searchForm = document.querySelector('.search');
-const searchInput = document.querySelector('.searchBar');
+const searchForm = document.querySelector(".search");
+const searchInput = document.querySelector(".searchBar");
 
-searchForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const query = searchInput.value.toLowerCase().trim();
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
 
-    try {
-        const response = await fetch('/data.json');
-        const data = await response.json();
+searchForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  let query = normalize(searchInput.value.trim());
 
-        // On cherche si le mot tapé est dans le titre OU la description
-        const pageTrouvee = data.find(page => 
-            page.titre.toLowerCase().includes(query) || 
-            page.description.toLowerCase().includes(query)
-        );
+  query = query.replace(/s$/, "");
 
-        if (pageTrouvee) {
-            // Redirection automatique vers l'URL définie dans le JSON
-            window.location.href = pageTrouvee.url;
-        } else {
-            alert("Aucun résultat pour cette recherche.");
-        }
-    } catch (err) {
-        console.error("Erreur : Vérifiez que data.json est à la racine.");
+  try {
+    const response = await fetch("/data.json");
+    const data = await response.json();
+
+    const pageTrouvee = data.find((page) => {
+  const titre = normalize(page.titre);
+  const description = normalize(page.description);
+  const keywords = page.keywords
+    ? page.keywords.map(k => normalize(k)).join(" ")
+    : "";
+
+  return (
+    titre.includes(query) ||
+    description.includes(query) ||
+    keywords.includes(query)
+  );
+});
+
+    if (pageTrouvee) {
+      window.location.href = pageTrouvee.url;
+    } else {
+      alert("Aucun résultat pour cette recherche.");
     }
+  } catch (err) {
+    console.error("Erreur : Vérifiez que data.json est à la racine.");
+  }
 });
 
 // CAROUSSEL
@@ -69,4 +85,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+// Animation homePage
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".fade");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+      rootMargin: "-100px 0px -100px 0px",
+    },
+  );
+
+  elements.forEach((el) => observer.observe(el));
 });

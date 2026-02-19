@@ -2,21 +2,25 @@
   {
     "titre": "Accueil",
     "url": "/index.html",
-    "description": "Concerts et événements"
+    "description": "Concerts et événements",
+    "keywords": ["accueil", "home", "concert", "evenement"]
   },
   {
     "titre": "Avis",
     "url": "/avis/avis.html",
-    "description": "Commentaires des clients"
+    "description": "Commentaires des clients",
+    "keywords": ["avis", "commentaire", "client", "clients"]
   },
   {
-    "titre": "Réservation", 
+    "titre": "Réservation",
     "url": "/Form.html",
-    "description": "Accéder au formulaire de réservation"
+    "description": "Accéder au formulaire de réservation",
+    "keywords": ["reservation", "reserver", "formulaire"]
   },
   {
-    "titre": "Détails Salle",
+    "titre": "Détails salle",
     "url": "/reservationsRoomCarts/reservations.page.html",
-    "description": "Voir les détails de la salle"
+    "description": "Voir les détails de la salle",
+    "keywords": ["salle", "salles", "room", "details"]
   }
 ]
