@@ -13,22 +13,40 @@
         <div>
           <img class="logo" src="images/rooms/RentalEvents.png" alt="logo" />
         </div>
-        <div>
-          <ul class="navLinks">
-            <li><a href="index.html">Accueil</a></li>
-            <li>
-              <a href="reservationsRoomCarts/reservations.page.html"
-                >Nos salles</a
-              >
-            </li>
-            <li><a href="Form.html">Réservation</a></li>
-            <li>Mon compte</li>
-          </ul>
-          <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+        <ul class="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li>
+            <a href="reservationsRoomCarts/reservations.page.html"
+              >Nos salles</a
+            >
+          </li>
+          <li><a href="Form.html">Réservation</a></li>
+          <li><a href="avis/avis.html">Avis</a></li>
+          <li><a href="#">Mon compte</a></li>
+        </ul>
+        <form class="search" action="#" method="GET">
+          <input type="text" class="searchBar" placeholder="Recherche..." />
+          <button type="submit" class="searchBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </nav>
     </main>
@@ -38,8 +56,8 @@
         <input type="radio" name="slider" id="item-1" checked />
         <input type="radio" name="slider" id="item-2" />
         <input type="radio" name="slider" id="item-3" />
-        <input type="radio" name="slider" id="item-4"/>
-        <input type="radio" name="slider" id="item-5">
+        <input type="radio" name="slider" id="item-4" />
+        <input type="radio" name="slider" id="item-5" />
 
         <div class="cards">
           <label class="card" id="salle-1">
@@ -79,16 +97,74 @@
           </label>
 
           <label class="card" id="salle-5">
-        <img src="images/rooms/galaxie-amneville.jpg" alt="Galaxie">
-        <div class="infos">
-          <h3>Galaxie</h3>
-          <p>Amneville · 20300 places</p>
-          <a href="Form.html" class="btnReserv">Réserver</a>
-        </div>
-      </label>
+            <img src="images/rooms/galaxie-amneville.jpg" alt="Galaxie" />
+            <div class="infos">
+              <h3>Galaxie</h3>
+              <p>Amneville · 20300 places</p>
+              <a href="Form.html" class="btnReserv">Réserver</a>
+            </div>
+          </label>
         </div>
       </div>
     </main>
+    <div class="partner">
+      <h2>Nos partenaires</h2>
+      <div class="imgPartner">
+        <img src="images/rooms/accorArena logo.jpg" alt="" />
+        <img src="images/rooms/arènesDeBeziersLogo.jpg" alt="" />
+        <img src="images/rooms/halteTonyGarnier Logo.jpg" alt="" />
+        <img src="images/rooms/logo-galaxie-quadri.png" alt="" />
+        <img src="images/rooms/LDLC_Arena.svg.png" alt="" />
+        <img src="images/rooms/logo-sites-07.jpg" alt="" />
+      </div>
+    </div>
+    <footer id="contact">
+      <div class="footer-container">
+        <!-- Colonne 1 : Logo et description -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/rooms/RentalEvents.png" alt="Logo Event" />
+          </div>
+          <p class="footer-desc">
+            Votre partenaire de confiance pour des événements inoubliables.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Colonne 2 : Contact -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Rue de l'event, Bordeaux</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+33 1 23 45 67 89</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>contact@event.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.footer-container -->
+
+      <div class="footer-bottom">
+        <p>&copy; 2026. Tous droits réservés.</p>
+      </div>
+    </footer>
   </body>
   <script src="homePage.js"></script>
 </html>
