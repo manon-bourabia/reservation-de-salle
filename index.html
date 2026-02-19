@@ -11,7 +11,12 @@
     <main>
       <nav class="headerNav">
         <div>
-          <img class="logo" src="images/rooms/RentalEvents.png" alt="logo" />
+          <img
+            class="logo"
+            id="top"
+            src="images/rooms/RentalEvents.png"
+            alt="logo"
+          />
         </div>
         <ul class="navLinks">
           <li><a href="index.html">Accueil</a></li>
@@ -117,22 +122,26 @@
       <p>
         Rental Events Luxury est une société spécialisée dans la location et la
         coordination de salles de concert et d’espaces événementiels d’exception
-        à travers la France. <br> Nous accompagnons producteurs, organisateurs,
-        artistes et grandes entreprises dans la recherche de lieux prestigieux
-        capables d’accueillir des événements à forte visibilité. <br> Grâce à un
-        réseau de partenaires emblématiques tels que l’Accor Arena, le Stade de
-        France, le Galaxie Amnéville, la LDLC Arena et la Halle Tony Garnier,
-        nous offrons un accès privilégié aux infrastructures les plus renommées
-        du territoire. <br> Notre engagement : proposer un service haut de gamme, sur
-        mesure, alliant excellence opérationnelle et sens du détail. De la
-        sélection du lieu à la coordination logistique (planning, technique,
-        sécurité, billetterie, accueil VIP), nous pilotons chaque étape avec
-        rigueur et professionnalisme. <br> Chez Rental Events Luxury, nous croyons
-        que chaque événement doit être unique, spectaculaire et parfaitement
-        orchestré. Notre ambition est de donner à vos projets l’ampleur qu’ils
-        méritent. <br><strong>Rental Events Luxury — L’excellence au service de vos
-        événements.</strong>
-        <br><br>
+        à travers la France. <br />
+        Nous accompagnons producteurs, organisateurs, artistes et grandes
+        entreprises dans la recherche de lieux prestigieux capables d’accueillir
+        des événements à forte visibilité. <br />
+        Grâce à un réseau de partenaires emblématiques tels que l’Accor Arena,
+        le Stade de France, le Galaxie Amnéville, la LDLC Arena et la Halle Tony
+        Garnier, nous offrons un accès privilégié aux infrastructures les plus
+        renommées du territoire. <br />
+        Notre engagement : proposer un service haut de gamme, sur mesure,
+        alliant excellence opérationnelle et sens du détail. De la sélection du
+        lieu à la coordination logistique (planning, technique, sécurité,
+        billetterie, accueil VIP), nous pilotons chaque étape avec rigueur et
+        professionnalisme. <br />
+        Chez Rental Events Luxury, nous croyons que chaque événement doit être
+        unique, spectaculaire et parfaitement orchestré. Notre ambition est de
+        donner à vos projets l’ampleur qu’ils méritent. <br /><strong
+          >Rental Events Luxury — L’excellence au service de vos
+          événements.</strong
+        >
+        <br /><br />
       </p>
     </div>
     <div class="partner">
@@ -153,6 +162,30 @@
         />
       </div>
     </div>
+    <style>
+  /* C'est ce bloc qui crée l'effet "flottant" */
+  .bouton-flottant {
+    position: fixed;     /* RESTE FIXE SUR L'ÉCRAN */
+    bottom: 30px;        /* Distance du bas de la fenêtre */
+    right: 30px;         /* Distance de la droite de la fenêtre */
+    
+    background-color: #778da9;
+    color: #0d1b2a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+</style>
+
+<a href="#" class="bouton-flottant">↑</a>
+    <!-- FOOTER  -->
     <footer id="contact">
       <div class="footer-container">
         <!-- Colonne 1 : Logo et description -->
