@@ -1,4 +1,28 @@
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000; /* Place la vidéo derrière tout le reste */
+  object-fit: cover; /* Important : garde les proportions sans déformer */
+  object-position: top center;
+}
+
+/* Optionnel : ajoute un léger voile sombre pour que ton texte reste lisible */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Noir à 40% d'opacité */
+  z-index: -999; /* Juste au-dessus de la vidéo, mais sous le texte */
+}
 /* START HEADER */
 .headerNav {
   display: flex;
@@ -22,6 +46,7 @@
   list-style: none;
   gap: 20px;
   margin: 0;
+  font-family: "Segoe UI", sans-serif;
 }
 .logo {
   width: 150px;
