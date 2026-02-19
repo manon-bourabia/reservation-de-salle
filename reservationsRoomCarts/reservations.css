@@ -57,6 +57,59 @@ body {
 a {
   text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+/* HEADER */
+.headerNav{
+  display: flex;
+  justify-content: space-between;
+}
+  .navLinks {
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0px;
+    height: 30vh;
+    top: 3vh;
+    background-color: #778da9;
+    flex-direction: column;
+    width: 20%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .navActive {
+    transform: translateX(0%);
+  }
+  .burger {
+    display: block;
+    align-items: center;
+  }
+  .logo {
+    width: 150px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
