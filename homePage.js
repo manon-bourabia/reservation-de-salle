@@ -21,23 +21,38 @@ navSlide();
 const searchForm = document.querySelector(".search");
 const searchInput = document.querySelector(".searchBar");
 
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
 searchForm.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const query = searchInput.value.toLowerCase().trim();
+  let query = normalize(searchInput.value.trim());
+
+  query = query.replace(/s$/, "");
 
   try {
     const response = await fetch("/data.json");
     const data = await response.json();
 
-    // On cherche si le mot tapé est dans le titre OU la description
-    const pageTrouvee = data.find(
-      (page) =>
-        page.titre.toLowerCase().includes(query) ||
-        page.description.toLowerCase().includes(query),
-    );
+    const pageTrouvee = data.find((page) => {
+  const titre = normalize(page.titre);
+  const description = normalize(page.description);
+  const keywords = page.keywords
+    ? page.keywords.map(k => normalize(k)).join(" ")
+    : "";
+
+  return (
+    titre.includes(query) ||
+    description.includes(query) ||
+    keywords.includes(query)
+  );
+});
 
     if (pageTrouvee) {
-      // Redirection automatique vers l'URL définie dans le JSON
       window.location.href = pageTrouvee.url;
     } else {
       alert("Aucun résultat pour cette recherche.");
