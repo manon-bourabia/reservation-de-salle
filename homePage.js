@@ -18,32 +18,33 @@ const navSlide = () => {
 };
 navSlide();
 // NavBar
-const searchForm = document.querySelector('.search');
-const searchInput = document.querySelector('.searchBar');
+const searchForm = document.querySelector(".search");
+const searchInput = document.querySelector(".searchBar");
 
-searchForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const query = searchInput.value.toLowerCase().trim();
+searchForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const query = searchInput.value.toLowerCase().trim();
 
-    try {
-        const response = await fetch('/data.json');
-        const data = await response.json();
+  try {
+    const response = await fetch("/data.json");
+    const data = await response.json();
 
-        // On cherche si le mot tapé est dans le titre OU la description
-        const pageTrouvee = data.find(page => 
-            page.titre.toLowerCase().includes(query) || 
-            page.description.toLowerCase().includes(query)
-        );
+    // On cherche si le mot tapé est dans le titre OU la description
+    const pageTrouvee = data.find(
+      (page) =>
+        page.titre.toLowerCase().includes(query) ||
+        page.description.toLowerCase().includes(query),
+    );
 
-        if (pageTrouvee) {
-            // Redirection automatique vers l'URL définie dans le JSON
-            window.location.href = pageTrouvee.url;
-        } else {
-            alert("Aucun résultat pour cette recherche.");
-        }
-    } catch (err) {
-        console.error("Erreur : Vérifiez que data.json est à la racine.");
+    if (pageTrouvee) {
+      // Redirection automatique vers l'URL définie dans le JSON
+      window.location.href = pageTrouvee.url;
+    } else {
+      alert("Aucun résultat pour cette recherche.");
     }
+  } catch (err) {
+    console.error("Erreur : Vérifiez que data.json est à la racine.");
+  }
 });
 
 // CAROUSSEL
@@ -69,4 +70,25 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+// Animation homePage
+document.addEventListener("DOMContentLoaded", () => {
+
+  const elements = document.querySelectorAll(".fade");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, {
+    threshold: 0.3,
+    rootMargin: "-100px 0px -100px 0px"
+  });
+
+  elements.forEach(el => observer.observe(el));
+
 });
