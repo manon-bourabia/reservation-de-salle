@@ -73,22 +73,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Animation homePage
 document.addEventListener("DOMContentLoaded", () => {
-
   const elements = document.querySelectorAll(".fade");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting){
-        entry.target.classList.add("visible");
-      } else {
-        entry.target.classList.remove("visible");
-      }
-    });
-  }, {
-    threshold: 0.3,
-    rootMargin: "-100px 0px -100px 0px"
-  });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+      rootMargin: "-100px 0px -100px 0px",
+    },
+  );
 
-  elements.forEach(el => observer.observe(el));
-
+  elements.forEach((el) => observer.observe(el));
 });
