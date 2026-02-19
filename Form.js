@@ -10,15 +10,15 @@
 // à droite le chemin vers l'image dans ton projet.
 
 var images = {
-  "1":  "images/rooms/StadeDeFrance.jpg",
+  "1":  "images/rooms/StadeDeFrance.webp",
   "2":  "images/rooms/Paris La Defense Arena.jpg",
   "3":  "images/rooms/zenitNancy.webp",
   "4":  "images/rooms/stade-pierre-mauroy.jpg",
   "5":  "images/rooms/AccorArena.jpg",
   "6":  "images/rooms/halleTonyGarnier.jpg",
-  "7":  "images/rooms/ldlc_arena.jpg",
-  "8":  "images/rooms/sud_de_france_arena.jpg",
-  "9":  "images/rooms/arena_lievin.jpg",
+  "7":  "images/rooms/ldlcArena.jpg",
+  "8":  "images/rooms/sud_de_france_arena-3.jpg",
+  "9":  "images/rooms/arenaStadeCouvertDeLievin.jpg",
   "10": "images/rooms/grand_hall_tours.jpg",
   "11": "images/rooms/arenes_beziers.jpg",
   "12": "images/rooms/arenes_nimes.jpg",
