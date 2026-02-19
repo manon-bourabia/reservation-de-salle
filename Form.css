@@ -16,44 +16,54 @@
   --c5: #E0E1DD;
 }
 
-.headerNav{
-    border-bottom: 1px solid #0d1b2a;
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* START HEADER */
+.headerNav {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 13;
+  background-color: #e0e1dd;
+}
+.headerNav a {
+  color: #415A77;
+}
+.headerNav a:visited {
+  color: #415A77;
+}
+.headerNav a:hover {
+  color: #778DA9;
+}
+.headerNav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
 }
 .logo {
-  width: 250px;
+  width: 150px;
   transition: all 0.3s ease;
 }
-
-.links {
-    margin-top: 15px;
-    margin-right: 45px;
-}
-
 .navLinks {
   display: flex;
-  justify-content: space-around;
-  gap: 40px;
-  list-style: none;
-  text-align: center;
-}
-
-.navLinks a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.nav-links a:visited {
-  text-decoration: none;
-  color: inherit; 
-}
-
-.headerNav {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  z-index: 10;
+  gap: 20px;
 }
 .burger {
   cursor: pointer;
   display: none;
+  z-index: 11;
+  position: relative;
 }
 .burger div {
   width: 25px;
@@ -62,30 +72,25 @@
   margin: 5px;
   transition: all 0.3s ease;
 }
-
-@media screen and (max-width: 768px) {
-  .navLinks {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #778da9;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .navActive {
-    transform: translateX(0%);
-  }
-  .burger{
-    display: block;
-    align-items: center;
-  }
-  .logo{
-    width: 70px;
-  }
+a {
+  text-decoration: none;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.searchBar {
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 1px;
+}
+.searchBtn {
+  border-radius: 15px;
+  background-color:transparent;
+  border: none;
 }
 
 body {
@@ -95,7 +100,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 /* TITRE */
 h1{
@@ -120,7 +124,7 @@ h1 + p {
 
 
 /* FORMULAIRE */
-form {
+.book {
   background-color: var(--c2);
   border: 1px solid var(--c3);
   border-radius: 20px;
@@ -158,7 +162,6 @@ label {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
 
 input,
 select,
@@ -218,7 +221,7 @@ select option {
 
 
 /* BOUTON D'ENVOI */
-button[type="submit"] {
+.send {
   width: 100%;
   padding: 1rem;
   background-color: var(--c3);
@@ -235,13 +238,13 @@ button[type="submit"] {
   transition: background-color 0.2s, transform 0.1s;
 }
 
-button[type="submit"]:hover {
+.send:hover {
   background-color: var(--c4);
   color: var(--c1);
 }
 
 /* effet quand on clique */
-button[type="submit"]:active {
+.send:active {
   transform: scale(0.98);
 }
 
