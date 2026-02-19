@@ -7,8 +7,7 @@
    #E0E1DD → texte principal (presque blanc)
 ================================================ */
 
-/* ── Variables : on définit les couleurs une fois,
-      on les réutilise partout ── */
+/* Variables */
 :root {
   --c1: #0D1B2A;
   --c2: #1B263B;
@@ -89,7 +88,6 @@
   }
 }
 
-/* BASE : corps de la page */
 body {
   background-color: var(--c4);
   color: var(--c5);
@@ -99,7 +97,7 @@ body {
 }
 
 
-/* TITRE PRINCIPAL h1 */
+/* TITRE */
 h1{
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.8rem;
@@ -121,7 +119,7 @@ h1 + p {
 }
 
 
-/* FORMULAIRE : conteneur principal*/
+/* FORMULAIRE */
 form {
   background-color: var(--c2);
   border: 1px solid var(--c3);
@@ -132,7 +130,7 @@ form {
 }
 
 
-/* TITRES DE SECTIONS dans le formulaire (h2)*/
+/* TITRES dans le formulaire */
 h2 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.4rem;
@@ -150,7 +148,7 @@ h2:first-of-type {
 }
 
 
-/* LABELS : texte au-dessus de chaque champ */
+/* texte au-dessus de chaque champ */
 label {
   display: block;          
   font-size: 0.82rem;
@@ -162,7 +160,6 @@ label {
 }
 
 
-/* CHAMPS : input, select, textare */
 input,
 select,
 textarea {
@@ -189,13 +186,12 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(119, 141, 169, 0.2);
 }
 
-/* Texte fantôme dans les champs vides */
 input::placeholder,
 textarea::placeholder {
   color: var(--c3);
 }
 
-/* Le select a une couleur de fond fixe pour les options */
+/*  select couleur de fond fixe */
 select option {
   background-color: var(--c2);
   color: var(--c5);
@@ -244,13 +240,13 @@ button[type="submit"]:hover {
   color: var(--c1);
 }
 
-/* Petit effet quand on clique */
+/* effet quand on clique */
 button[type="submit"]:active {
   transform: scale(0.98);
 }
 
 
-/* LIGNE SÉPARATRICE avant le footer */
+/* LIGNE avant le footer */
 .liner-footer {
   height: 1px;
   background-color: var(--c3);
