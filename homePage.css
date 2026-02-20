@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 
 
-=======
 /* Variables */
 :root {
   --c1: #0D1B2A;
@@ -10,7 +8,6 @@
   --c4: #778DA9;
   --c5: #E0E1DD;
 }
->>>>>>> master
 
 html{
   scroll-behavior: smooth;
@@ -19,13 +16,10 @@ html{
 html, body {
   overflow-x: hidden;
   margin: 0;
-<<<<<<< HEAD
   
 }
 body {
-=======
   font-family: 'DM Sans', sans-serif;
->>>>>>> master
   background-color: #e0e1dd;
 }
 /* START HEADER */
