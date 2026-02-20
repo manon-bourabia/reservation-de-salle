@@ -1,3 +1,5 @@
+
+
 /* Variables */
 :root {
   --c1: #0D1B2A;
@@ -14,6 +16,9 @@ html{
 html, body {
   overflow-x: hidden;
   margin: 0;
+  
+}
+body {
   font-family: 'DM Sans', sans-serif;
   background-color: #e0e1dd;
 }
