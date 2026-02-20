@@ -1,24 +1,31 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+/* Variables */
+:root {
+  --c1: #0D1B2A;
+  --c2: #1B263B;
+  --c3: #415A77;
+  --c4: #778DA9;
+  --c5: #E0E1DD;
 }
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     background: #415A77;
+    font-family: "Segoe UI", sans-serif;
   
 }
+/* START HEADER */
 .headerNav {
   display: flex; 
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 13;
   background-color: #e0e1dd;
-  border-radius: 8px;
 }
 .headerNav a {
   color: #415A77;
@@ -61,6 +68,58 @@ body {
 a {
   text-decoration: none;
 }
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.searchBar {
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 1px;
+}
+.searchBtn {
+  border-radius: 15px;
+  background-color:transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Quand on clique dans un champ */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--c4);
+  box-shadow: 0 0 0 3px rgba(119, 141, 169, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--c3);
+}
+ .backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #778da9;
+    color: #0d1b2a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
 @media screen and (max-width: 768px) {
 /* HEADER */
 .headerNav{
@@ -187,12 +246,16 @@ a {
   margin-bottom: 40px;
 }
 
-h1 {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 1s ease-out forwards;
-  margin-top: 60px;
+h1{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--c5);
+  text-align: center;
+  margin: 3rem 0 0.5rem 0;
+  letter-spacing: 0.05em;
 }
+
 
 
 @keyframes fadeUp {
@@ -246,8 +309,9 @@ footer {
 
 .footer-socials {
   display: flex;
-  gap: 1rem;
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer-socials a {

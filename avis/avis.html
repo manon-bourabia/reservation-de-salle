@@ -1,38 +1,112 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="avis.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
-<section class="reviews-section">
-    <h1 class="section-title">Ils nous font confiance</h1>
-
-    <div class="reviews-container">
-      
-      
-      <button class="nav-btn prev">❮</button>
-
-     
-      <div class="review-card" id="review-card">
-      
+  <!-----START HEADER----->
+  <main>
+    <nav class="headerNav">
+      <div>
+        <img class="logo" src="../images/rooms/RentalEvents.png" alt="logo" />
       </div>
+      <ul class="navLinks">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../reservationsRoomCarts/reservations.page.html">Nos salles</a></li>
+        <li><a href="../Form.html">Réservation</a></li>
+        <li><a href="avis.html">Avis</a></li>
+        <li><a href="#">Mon compte</a></li>
+      </ul>
+      <form class="search" action="#" method="GET">
+        <input type="text" class="searchBar" placeholder="Recherche..." />
+        <button type="submit" class="searchBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </main>
+  <!----END HEADER---->
+      <style>
+  /* C'est ce bloc qui crée l'effet "flottant" */
+  .bouton-flottant {
+    position: fixed;     /* RESTE FIXE SUR L'ÉCRAN */
+    bottom: 30px;        /* Distance du bas de la fenêtre */
+    right: 30px;         /* Distance de la droite de la fenêtre */
+    
+    background-color: #778da9;
+    color: #0d1b2a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+</style>
 
-     
+<a href="#" class="bouton-flottant">↑</a>
+  <!-- CONTENU PRINCIPAL -->
+  <section class="reviews-section">
+    <h1 class="section-title">Ils nous font confiance</h1>
+    <div class="reviews-container">
+      <button class="nav-btn prev">❮</button>
+      <div class="review-card" id="review-card"></div>
       <button class="nav-btn next">❯</button>
-
     </div>
-
     <div class="controls">
       <button id="filter-best">Meilleurs avis ⭐</button>
       <button id="show-all">Tous les avis</button>
     </div>
-
   </section>
 
+  <!-- FOOTER -->
+  <div class="liner-footer"></div>
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="../images/rooms/RentalEvents.png" alt="Logo Event" />
+        </div>
+        <p class="footer-desc">Votre partenaire de confiance pour des événements inoubliables.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i><span>Rue de l'event, Bordeaux</span></li>
+          <li><i class="fas fa-phone"></i><span>+33 1 23 45 67 89</span></li>
+          <li><i class="fas fa-envelope"></i><span>contact@event.com</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026. Tous droits réservés.</p>
+    </div>
+  </footer>
 
-</body>
-<script src="avis.page.js"></script>
+  <script src="avis.page.js"></script>
+</body> 
 </html>
