@@ -335,7 +335,6 @@ input[type="radio"] {
   justify-content: center;
   align-content: center;
   text-align: center;
-  border-bottom: solid 1px #0d1b2a;
   background-color: var(--c3);
   border-bottom: solid 0.2px #778da9;
   margin-top: 50px;
@@ -399,7 +398,6 @@ input[type="radio"] {
   font-family: "Montserrat Medium";
   text-align: center;
   width: 100%;
-  border-bottom: solid 1px #0d1b2a;
   margin: 30px 0px 50px;
   background-color: var(--c4);
   margin-top: 0px;
@@ -435,11 +433,27 @@ input[type="radio"] {
 .imgPartner img:hover {
   transform: scale(1.05);
 }
-.bouton-flottant {
+.backToTop{
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-
+  bottom: 20px;  
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  z-index: 10;
+}
+.back-to-top:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 /* sous-titre sous h1 */
 h1 + p {
   text-align: center;
