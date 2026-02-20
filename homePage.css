@@ -341,6 +341,11 @@ input[type="radio"] {
   align-content: center;
   text-align: center;
   background-color: var(--c3);
+  border-bottom: solid 0.2px #778da9;
+  margin-top: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .aboutUs p {
   width: 70%;
@@ -401,6 +406,10 @@ input[type="radio"] {
   margin: 30px 0px 50px;
   background-color: var(--c4);
   margin-top: 0px;
+  width: 80%;
+  border-bottom: solid 0.2px #415a77;
+  margin-left: auto;
+  margin-right: auto;
 }
 .partner h2 {
   color: #0d1b2a;
@@ -460,7 +469,11 @@ h1 + p {
   line-height: 1.7;
 }
 
-.back-to-top {
+.bouton-flottant {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
   background-color: #778da9;
   color: #0d1b2a;
   width: 30px;
