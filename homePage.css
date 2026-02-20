@@ -99,6 +99,15 @@ textarea::placeholder {
   color: var(--c3);
 }
 
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Caroussel */
 .heroConcert {
   width: 100%;
@@ -426,6 +435,10 @@ input[type="radio"] {
 .imgPartner img:hover {
   transform: scale(1.05);
 }
+.bouton-flottant {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 
 /* sous-titre sous h1 */
 h1 + p {
@@ -611,4 +624,5 @@ footer h3 {
   .imgPartner {
     margin-top: 20px;
   }
+}
 }
