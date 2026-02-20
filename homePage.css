@@ -455,10 +455,6 @@ input[type="radio"] {
     z-index: 10;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   }
-.backToTop:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
 /* sous-titre sous h1 */
 h1 + p {
   text-align: center;
