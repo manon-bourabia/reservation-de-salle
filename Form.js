@@ -1,3 +1,26 @@
+window.addEventListener("DOMContentLoaded", function() {
+  
+  // On récupère l'URL actuelle
+  var url = new URL(window.location.href);
+  
+  // (ex: ?salle=5)
+  var salleId = url.searchParams.get("salle");
+  
+  // Si une salle est spécifiée dans l'URL
+  if (salleId) {
+    
+    // On récupère le <select> de la salle
+    var selectSalle = document.getElementById("salle");
+    
+    // On met la valeur du select = l'ID de la salle
+    selectSalle.value = salleId;
+    
+    // afficher l'image de la salle
+    var event = new Event("change");
+    selectSalle.dispatchEvent(event);
+  }
+});
+
 // MENU BURGER
 const navSlide = () => {
   const burger = document.querySelector(".burger");
