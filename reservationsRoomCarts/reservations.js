@@ -1,9 +1,6 @@
 
-
-
-const container = document.getElementById("container")
-const template = document.getElementById("templateReservation")
-
+const container = document.getElementById("container");
+const template = document.getElementById("templateReservation");
 
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -24,60 +21,39 @@ const navSlide = () => {
 };
 navSlide();
 
-
-
-
-
-
-
 function showRooms(rooms) {
-
-    container.innerHTML = ""   
-    rooms.forEach(room => {
-
-        const clone = template.content.cloneNode(true)
-
-     
-        clone.querySelector(".roomTitle").textContent = room.room_name
-
-       
-        clone.querySelector(".roomdescription").textContent =
-            `${room.description} | Ville : ${room.city} | Capacité : ${room.capacity} places`
-
-      
-        const photoDiv = clone.querySelector(".photo")
-
-        const img = document.createElement("img")
-        img.src = room.photo_path
-        img.alt = room.room_name
-        img.style.width = "100%"
-        img.style.height = "200px"
-        img.style.objectFit = "cover"
-
-        photoDiv.appendChild(img)
-
-      
-        clone.querySelector(".reserveBtn")
-            .addEventListener("click", () => {
-                window.location.href = "http://127.0.0.1:5500/reservation-de-salle/Form.html"
-            })
-
-      
-        container.appendChild(clone)
-    })
+  container.innerHTML = "";
+  
+  rooms.forEach(room => {
+    const clone = template.content.cloneNode(true);
+    
+    clone.querySelector(".roomTitle").textContent = room.room_name;
+    clone.querySelector(".roomdescription").textContent =
+      `${room.description} | Ville : ${room.city} | Capacité : ${room.capacity} places`;
+    
+    const photoDiv = clone.querySelector(".photo");
+    const img = document.createElement("img");
+    img.src = room.photo_path;
+    img.alt = room.room_name;
+    img.style.width = "100%";
+    img.style.height = "200px";
+    img.style.objectFit = "cover";
+    photoDiv.appendChild(img);
+    
+    // ajout de l'ID de la salle dans l'URL
+    clone.querySelector(".reserveBtn").addEventListener("click", () => {
+      window.location.href = "../Form.html?salle=" + room.id;
+    });
+    
+    container.appendChild(clone);
+  });
 }
 
- window.addEventListener("DOMContentLoaded", () => {
-
-    fetch("data.json")
-        .then(response => response.json())
-        .then(data => {
-            showRooms(data.rooms)
-        })
-        .catch(error => console.error("Erreur :", error))
-
-})
- 
-
-
-
+window.addEventListener("DOMContentLoaded", () => {
+  fetch("data.json")
+    .then(response => response.json())
+    .then(data => {
+      showRooms(data.rooms);
+    })
+    .catch(error => console.error("Erreur :", error));
+});
