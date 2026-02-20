@@ -3,6 +3,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rental Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="homePage.css" />
     <link rel="icon" type="image/x-icon" href="images/rooms/RentalEvents.png" />
   </head>
@@ -27,7 +29,7 @@
           </li>
           <li><a href="Form.html">Réservation</a></li>
           <li><a href="avis/avis.html">Avis</a></li>
-          <li><a href="#">Mon compte</a></li>
+          <li><a href="Login/Login.html">Login</a></li>
         </ul>
         <form class="search" action="#" method="GET">
           <input type="text" class="searchBar" placeholder="Recherche..." />
@@ -41,7 +43,8 @@
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
-              stroke-linejoin="round">
+              stroke-linejoin="round"
+            >
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
@@ -55,7 +58,7 @@
       </nav>
     </main>
     <!----END HEADER---->
-    <main class="heroConcert">
+    <main class="heroConcert fade">
       <div class="containerCarousel">
         <input type="radio" name="slider" id="item-1" checked />
         <input type="radio" name="slider" id="item-2" />
@@ -69,7 +72,7 @@
             <div class="infos">
               <h3>Le Zénith</h3>
               <p>Strasbourg · 6000 places</p>
-              <a href="Form.html" class="btnReserv">Réserver</a>
+              <a href="Form.html" class="btnReserv cta">Réserver</a>
             </div>
           </label>
 
@@ -78,7 +81,7 @@
             <div class="infos">
               <h3>Arène de Bézier</h3>
               <p>Bézier · 2000 places</p>
-              <a href="Form.html" class="btnReserv">Réserver</a>
+              <a href="Form.html" class="btnReserv cta">Réserver</a>
             </div>
           </label>
 
@@ -87,7 +90,7 @@
             <div class="infos">
               <h3>Accor Arena</h3>
               <p>Bercy · 20300 places</p>
-              <a href="Form.html" class="btnReserv">Réserver</a>
+              <a href="Form.html" class="btnReserv cta">Réserver</a>
             </div>
           </label>
 
@@ -96,7 +99,7 @@
             <div class="infos">
               <h3>Ldlc Arena</h3>
               <p>Lyon · 20300 places</p>
-              <a href="Form.html" class="btnReserv">Réserver</a>
+              <a href="Form.html" class="btnReserv cta">Réserver</a>
             </div>
           </label>
 
@@ -105,13 +108,13 @@
             <div class="infos">
               <h3>Galaxie</h3>
               <p>Amneville · 20300 places</p>
-              <a href="Form.html" class="btnReserv">Réserver</a>
+              <a href="Form.html" class="btnReserv cta">Réserver</a>
             </div>
           </label>
         </div>
       </div>
     </main>
-    <div class="aboutUs">
+    <div class="aboutUs fade">
       <h2>
         <span>À</span>
         <span>propos</span>
@@ -137,14 +140,14 @@
         professionnalisme. <br />
         Chez Rental Events Luxury, nous croyons que chaque événement doit être
         unique, spectaculaire et parfaitement orchestré. Notre ambition est de
-        donner à vos projets l’ampleur qu’ils méritent. <br /><strong
+        donner à vos projets l’ampleur qu’ils méritent. <br /><br /><strong
           >Rental Events Luxury — L’excellence au service de vos
           événements.</strong
         >
         <br /><br />
       </p>
     </div>
-    <div class="partner">
+    <div class="partner fade">
       <h2>Nos partenaires</h2>
       <div class="imgPartner">
         <img src="images/rooms/AccorArenaLog.png" alt="" />
@@ -162,29 +165,8 @@
         />
       </div>
     </div>
-    <style>
-  /* C'est ce bloc qui crée l'effet "flottant" */
-  .bouton-flottant {
-    position: fixed;     /* RESTE FIXE SUR L'ÉCRAN */
-    bottom: 30px;        /* Distance du bas de la fenêtre */
-    right: 30px;         /* Distance de la droite de la fenêtre */
-    
-    background-color: #778da9;
-    color: #0d1b2a;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    z-index: 10;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  }
-</style>
 
-<a href="#" class="bouton-flottant">↑</a>
+    <a href="#" class="bouton-flottant">↑</a>
     <!-- FOOTER  -->
     <footer id="contact">
       <div class="footer-container">
