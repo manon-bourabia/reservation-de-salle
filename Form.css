@@ -354,3 +354,34 @@ footer h3 {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  .headerNav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #e0e1dd;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    z-index: 10;
+  }
+  .navActive {
+    transform: translateX(0%);
+  }
+  .burger {
+    display: block;
+    align-items: center;
+  }
+  .logo {
+    width: 150px;
+  }
+  }
