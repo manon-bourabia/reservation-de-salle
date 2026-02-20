@@ -331,7 +331,7 @@ input[type="radio"] {
 
 .cta:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 46, 99, 0.6);
+  box-shadow: 0 0 20px #778DA9;
 }
 
 .aboutUs {
