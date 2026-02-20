@@ -1,10 +1,10 @@
 /* Variables */
 :root {
-  --c1: #0D1B2A;
-  --c2: #1B263B;
-  --c3: #415A77;
-  --c4: #778DA9;
-  --c5: #E0E1DD;
+  --c1: #0d1b2a;
+  --c2: #1b263b;
+  --c3: #415a77;
+  --c4: #778da9;
+  --c5: #e0e1dd;
 }
 
 * {
@@ -14,7 +14,7 @@
 
 /* START HEADER */
 .headerNav {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -22,13 +22,13 @@
   background-color: #e0e1dd;
 }
 .headerNav a {
-  color: #415A77;
+  color: #415a77;
 }
 .headerNav a:visited {
-  color: #415A77;
+  color: #415a77;
 }
 .headerNav a:hover {
-  color: #778DA9;
+  color: #778da9;
 }
 .headerNav ul {
   display: flex;
@@ -76,7 +76,7 @@ a {
 }
 .searchBtn {
   border-radius: 15px;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
 }
 
@@ -94,16 +94,15 @@ textarea::placeholder {
   color: var(--c3);
 }
 
-
 body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: #415A77;
+  font-family: "DM Sans", sans-serif;
+  background-color: #415a77;
   color: #fff;
   min-height: 100vh;
 }
 
-h1{
-  font-family: 'Cormorant Garamond', serif;
+h1 {
+  font-family: "Cormorant Garamond", serif;
   font-size: 2.8rem;
   font-weight: 700;
   color: var(--c5);
@@ -111,7 +110,6 @@ h1{
   margin: 3rem 0 0.5rem 0;
   letter-spacing: 0.05em;
 }
-
 
 .reviews-section {
   text-align: center;
@@ -121,10 +119,9 @@ h1{
   font-size: 2.5rem;
   margin-bottom: 3rem;
   letter-spacing: 2px;
-  
-  color: #fff; 
-}
 
+  color: #fff;
+}
 
 .reviews-container {
   display: flex;
@@ -134,7 +131,6 @@ h1{
   color: #1b263b;
 }
 
-
 .review-card {
   background: #e0e1dd;
   padding: 2.5rem;
@@ -143,9 +139,10 @@ h1{
   max-width: 650px;
   min-height: 300px;
   box-shadow: 0 0 40px rgba(212, 175, 55, 0.1);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
 }
-
 
 .review-card img {
   width: 90px;
@@ -156,20 +153,17 @@ h1{
   border: 2px solid #1b263b;
 }
 
-
 .review-card h2 {
   font-size: 1.2rem;
   margin-bottom: 0.3rem;
 }
 
-
 .review-card h3 {
   font-size: 0.9rem;
   font-weight: normal;
-  color: #415A77;
+  color: #415a77;
   margin-bottom: 1rem;
 }
-
 
 .stars {
   color: #d4af37;
@@ -177,22 +171,19 @@ h1{
   font-size: 1.2rem;
 }
 
-
 .review-card p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
-
 .date {
   font-size: 0.8rem;
-  color: #415A77;
+  color: #415a77;
 }
 
-
 .nav-btn {
-  background: linear-gradient(135deg, #0d1b2a, #415A77);
+  background: linear-gradient(135deg, #0d1b2a, #415a77);
   border: 1px solid #1b263b;
   color: #fff;
   font-size: 1.5rem;
@@ -207,38 +198,62 @@ h1{
   color: #000;
 }
 
-
 .controls {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 .controls button {
- 
   border: 1px solid #1b263b;
   color: #fff;
   padding: 0.6rem 1.2rem;
   margin: 0 0.5rem;
   cursor: pointer;
   transition: 0.3s ease;
-  background: linear-gradient(135deg, #0d1b2a, #415A77);
+  background: linear-gradient(135deg, #0d1b2a, #415a77);
   border-radius: 8px;
 }
 
 .controls button:hover {
- 
-  background: linear-gradient(135deg, #0d1b2a, #415A77);
+  background: linear-gradient(135deg, #0d1b2a, #415a77);
   color: #000;
 }
-
 
 @media (max-width: 768px) {
   .review-card {
     padding: 1.5rem;
   }
-
   .section-title {
     font-size: 1.8rem;
+  }
+  /* HEADER */
+  .headerNav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #e0e1dd;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    z-index: 10;
+  }
+  .navActive {
+    transform: translateX(0%);
+  }
+  .burger {
+    display: block;
+    align-items: center;
+  }
+  .logo {
+    width: 150px;
   }
 }
 
@@ -249,15 +264,15 @@ footer {
 }
 
 .footer-container {
-  display: flex;            
+  display: flex;
   gap: 3rem;
   max-width: 900px;
   margin: 0 auto;
-  flex-wrap: wrap;          
+  flex-wrap: wrap;
 }
 
 .footer-column {
-  flex: 1;                  
+  flex: 1;
   min-width: 200px;
 }
 
@@ -296,7 +311,7 @@ footer {
 
 /* Titre Contact dans le footer */
 footer h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.1rem;
   color: var(--c5);
   letter-spacing: 0.08em;
@@ -306,7 +321,7 @@ footer h3 {
 
 /* Liste des infos de contact */
 .footer-contact {
-  list-style: none;         
+  list-style: none;
   padding: 0;
   margin: 0;
 }
